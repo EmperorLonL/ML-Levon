@@ -3,9 +3,10 @@ import random
 
 random.seed(50)
 
+
 subject = ["Math", "Science", "History", "English", "Pyhsics", "Biology", "Geography", "Chemistry"]
 grade = [80, 90, 75, 85, 92, 88, 82, 78]
-color = ["green"]
+color = ['red', 'blue', 'yellow', 'orange', 'pink', 'purple', 'green', 'black']
 
 num = 0
 
@@ -19,5 +20,6 @@ plt.bar(subject, grade, color = color)
 
 plt.xlabel("Subject")
 plt.ylabel("Grade")
+plt.title('Grades')
 plt.show()
 
