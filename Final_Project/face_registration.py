@@ -50,8 +50,8 @@ cap.release()
 cv2.destroyAllWindows()
 
 now = datetime.now()
-file_name = f"faces/{now.strftime('%Y-%m-%d-%H-%M-%S')}"
-with open(fine_name, 'wb') as f:
+file_name = f"faces/{now.strftime('%Y-%m-%d-%H-%M-%S')}.pickle"
+with open(file_name, 'wb') as f:
 	pickle.dump(face_data, f)
-print("Face data for '{name}' saved successfully!")
+print(f"Face data for '{name}' saved successfully!")
 
